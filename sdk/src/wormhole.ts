@@ -178,6 +178,9 @@ export class WormholeContext extends MultiProvider<Domain> {
       case Context.COSMOS: {
         return new CosmosContext(this, chainName, this.foreignAssetCache);
       }
+      case Context.INJECTIVE: {
+        return new CosmosContext(this, chainName, this.foreignAssetCache);
+      }
       default: {
         throw new Error('Not able to retrieve context');
       }

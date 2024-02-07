@@ -33,6 +33,10 @@ import ATOM from './Tokens/ATOM';
 import KUJI from './Tokens/KUJI';
 import PYTH from './Tokens/PYTH';
 import INJ from './Tokens/INJ';
+import BRZ from './Tokens/BRZ';
+import LDO from './Tokens/LDO';
+import CHZ from './Tokens/CHZ';
+import ALPHA from './Tokens/ALPHA';
 
 const useStyles = makeStyles<{ size: number }>()((theme, { size }) => ({
   container: {
@@ -134,6 +138,18 @@ export const getIcon = (icon: Icon) => {
     }
     case Icon.INJ: {
       return INJ;
+    }
+    case Icon.CHZ: {
+      return CHZ;
+    }
+    case Icon.BRZ: {
+      return BRZ;
+    }
+    case Icon.LDO: {
+      return LDO;
+    }
+    case Icon.ALPHA: {
+      return ALPHA;
     }
     default: {
       return noIcon;

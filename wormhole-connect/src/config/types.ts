@@ -38,6 +38,10 @@ export enum Icon {
   'KUJI',
   'PYTH',
   'INJ',
+  'CHZ',
+  'LDO',
+  'BRZ',
+  'ALPHA',
 }
 
 export enum Route {

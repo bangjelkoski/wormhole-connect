@@ -2667,7 +2667,7 @@ export const MAINNET_TOKENS: TokensConfig = {
   INJ: {
     key: 'INJ',
     symbol: 'INJ',
-    nativeChain: 'inj',
+    nativeChain: 'injective',
     tokenId: {
       chain: 'injective',
       address: 'inj',
@@ -2676,7 +2676,78 @@ export const MAINNET_TOKENS: TokensConfig = {
     coinGeckoId: 'injective-protocol',
     color: '#24DAC6',
     decimals: {
-      default: 18,
+      Injective: 18,
+      Ethereum: 18,
+      default: 8,
+    },
+  },
+  CHZ: {
+    key: 'CHZ',
+    symbol: 'CHZ',
+    nativeChain: 'ethereum',
+    tokenId: {
+      chain: 'ethereum',
+      address: '0x3506424F91fD33084466F402d5D97f05F8e3b4AF',
+    },
+    icon: Icon.CHZ,
+    coinGeckoId: 'chiliz',
+    color: '##F61156',
+    decimals: {
+      Ethereum: 18,
+      default: 8,
+    },
+  },
+  LDO: {
+    key: 'LDO',
+    symbol: 'LDO',
+    nativeChain: 'ethereum',
+    tokenId: {
+      chain: 'ethereum',
+      address: '0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32',
+    },
+    icon: Icon.LDO,
+    coinGeckoId: 'lido-dao',
+    color: '#E9958A',
+    decimals: {
+      Ethereum: 18,
+      default: 8,
+    },
+    foreignAssets: {
+      injective: {
+        address: 'inj12345',
+        decimals: 18,
+      },
+    },
+  },
+  BRZ: {
+    key: 'BRZ',
+    symbol: 'BRZ',
+    nativeChain: 'ethereum',
+    tokenId: {
+      chain: 'ethereum',
+      address: '0x420412E765BFa6d85aaaC94b4f7b708C89be2e2B',
+    },
+    icon: Icon.BRZ,
+    coinGeckoId: 'brz',
+    color: '#0F0133',
+    decimals: {
+      default: 4,
+    },
+  },
+  ALPHA: {
+    key: 'ALPHA',
+    symbol: 'ALPHA',
+    nativeChain: 'ethereum',
+    tokenId: {
+      chain: 'ethereum',
+      address: '0x138C2F1123cF3f82E4596d097c118eAc6684940B',
+    },
+    icon: Icon.ALPHA,
+    coinGeckoId: 'alphacoin',
+    color: '#70CFDF',
+    decimals: {
+      Ethereum: 18,
+      default: 8,
     },
   },
 };

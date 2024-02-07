@@ -43,8 +43,8 @@ function INJ() {
           y2="300"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#0082FA" />
-          <stop offset="1" stop-color="#00F2FE" />
+          <stop stopColor="#0082FA" />
+          <stop offset="1" stopColor="#00F2FE" />
         </linearGradient>
         <linearGradient
           id="`paint1_linear-inj-2`"
@@ -54,8 +54,8 @@ function INJ() {
           y2="300"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#0082FA" />
-          <stop offset="1" stop-color="#00F2FE" />
+          <stop stopColor="#0082FA" />
+          <stop offset="1" stopColor="#00F2FE" />
         </linearGradient>
       </defs>
     </svg>
