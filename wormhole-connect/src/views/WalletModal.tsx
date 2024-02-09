@@ -169,6 +169,19 @@ const getWalletOptions = async (
   } else if (config.context === Context.SEI) {
     const suiOptions = await fetchSeiOptions();
     return Object.values(mapWallets(suiOptions, Context.SEI));
+  } else if (config.context === Context.INJECTIVE) {
+    return [
+      ...Object.values(
+        mapWallets(wallets.cosmos, Context.COSMOS, [
+          'Falcon',
+          'Coin98',
+          'OneKey',
+          'OKX Wallet',
+          'Bitget',
+        ]),
+      ),
+      ...Object.values(mapWallets(wallets.evm, Context.ETH)),
+    ];
   } else if (
     config.context === Context.COSMOS &&
     config.id !== CHAIN_ID_EVMOS
